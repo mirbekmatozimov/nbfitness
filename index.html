@@ -12,18 +12,21 @@
     <title>NBfitness</title>
   </head>
   <body>
-    <header class="header section-title">
+    <header class="header">
       <div class="container">
         <div class="header__inner df">
           <div class="header__logo">
             <a href="#">
+              <!--  -->
               <img src="./img/Logo.svg" alt="logo" />
             </a>
           </div>
           <nav class="nav">
             <ul class="df">
-              <li>
-                <img src="./img/breath.svg" alt="" />
+              <li class="nav__li-breath">
+                <a href="#">
+                  <img src="./img/breath.svg" alt="" />
+                </a>
                 <a href="#" class="nav__link nav__link-breath">Дыхание</a>
               </li>
               <li>
@@ -31,16 +34,18 @@
                 <a href="#" class="nav__link">Полезное</a>
               </li>
               <li>
-                <img src="./img/gift.svg" alt="" />
+                <a href="#">
+                  <img src="./img/gift.svg" alt="" />
+                </a>
                 <a href="#" class="nav__link">Промокод</a>
               </li>
             </ul>
             <button class="header__burger">
               <div class="header__burger-icon">
-                <img src="./img/burger.svg" alt="burger">
+                <img src="./img/burger.svg" alt="burger" />
               </div>
               <div class="header__burger-profile">
-                <img src="img/avatar.svg" alt="profile">
+                <img src="img/avatar.svg" alt="profile" />
               </div>
             </button>
           </nav>
@@ -57,54 +62,100 @@
         </div>
         <div class="faq__content df">
           <div class="faq__nav">
-            <div class="faq__menu ">
+            <div class="faq__menu">
               <ul>
-                <li><a href="#">Общие</a>
+                <li>
+                  <a href="#" data-id="all">Общие</a>
                   <a href="#">
-                  <img class="faq__right__arrow" src="./img/right-arrow.svg" alt="">
-                </a>
-                </li>
-                <li><a href="#">О курсах</a>
-                  <a href="#">
-                    <img class="faq__right__arrow" src="./img/right-arrow.svg" alt="">
+                    <img
+                      class="faq__right__arrow"
+                      src="./img/right-arrow.svg"
+                      alt=""
+                    />
                   </a>
                 </li>
-                <li><a href="#">Пользовательское согл.</a>
+                <li>
+                  <a href="#" data-id="about">О курсах</a>
                   <a href="#">
-                    <img class="faq__right__arrow" src="./img/right-arrow.svg" alt="">
+                    <img
+                      class="faq__right__arrow"
+                      src="./img/right-arrow.svg"
+                      alt=""
+                    />
                   </a>
                 </li>
-                <li><a href="#">Другие вопросы</a>
+                <li>
+                  <a href="#" data-id="users_permission"
+                    >Пользовательское согл.</a
+                  >
                   <a href="#">
-                    <img class="faq__right__arrow" src="./img/right-arrow.svg" alt="">
+                    <img
+                      class="faq__right__arrow"
+                      src="./img/right-arrow.svg"
+                      alt=""
+                    />
                   </a>
                 </li>
-                <li><a href="#">Остальное</a>
+                <li>
+                  <a href="#" data-id="another_questions">Другие вопросы</a>
                   <a href="#">
-                    <img class="faq__right__arrow" src="./img/right-arrow.svg" alt="">
+                    <img
+                      class="faq__right__arrow"
+                      src="./img/right-arrow.svg"
+                      alt=""
+                    />
                   </a>
                 </li>
-                <li><a href="#">Лучшее</a>
+                <li>
+                  <a href="#" data-id="rest">Остальное</a>
                   <a href="#">
-                    <img class="faq__right__arrow" src="./img/right-arrow.svg" alt="">
+                    <img
+                      class="faq__right__arrow"
+                      src="./img/right-arrow.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-id="best">Лучшее</a>
+                  <a href="#">
+                    <img
+                      class="faq__right__arrow"
+                      src="./img/right-arrow.svg"
+                      alt=""
+                    />
                   </a>
                 </li>
               </ul>
             </div>
             <div class="faq__contact pt">
-              Напиши нам
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
+              <a href="#" class="faq__contact_text"> Напиши нам</a>
+
+              <a href="#">
+                <img src="./img/telegram.svg" alt="telegram" />
+              </a>
+              <a href="#">
+                <img src="./img/Instagram.svg" alt="instagram" />
+              </a>
+              <a href="#">
+                <img src="./img/Whatsapp.png" alt="whatsapp" />
+              </a>
             </div>
           </div>
-          <div class="faq__navcur">
-            <div class="faq__question pb">
-              Как оплатить из европы и других стран? Не получается оплатить?
-            </div>
+          <div class="faq__navcur active" id="all">
             <div class="faq__question">
               <div class="faq__question-title">
-                Как оплатить из европы и других стран? Не получается оплатить?
+                <p>
+                  Как оплатить из европы и других стран? Не получается оплатить?
+                </p>
+                <button class="question_btn">
+                  <span class="faq_question_arrow_down faq_question_icon">
+                    <img src="./img/down-arrow.svg" alt="" />
+                  </span>
+                  <span class="faq_question_minus faq_question_icon">
+                    <img src="./img/minus.svg" alt="" />
+                  </span>
+                </button>
               </div>
               <div class="faq__question-text">
                 Начало использования сайта https://nbfitness.online (далее по
@@ -113,16 +164,86 @@
                 При несогласии с условиями настоящего соглашения Пользователь
                 обязуется воздержаться от приобретения услуг или прекратить
                 использование Сайта без возврата средств.
+                <div class="faq__question-copy">
+                  <span class="copy_icon">
+                    <img src="./img//copy.svg" alt="" />
+                  </span>
+                  <button class="copy_btn">Скопировать</button>
+                </div>
               </div>
-              <div class="faq__question-copy">Скопировать</div>
             </div>
+            <div class="faq__question">
+              <div class="faq__question-title">
+                <p>
+                  Как оплатить из европы и других стран? Не получается оплатить?
+                </p>
+                <button class="question_btn">
+                  <span class="faq_question_arrow_down faq_question_icon">
+                    <img src="./img/down-arrow.svg" alt="" />
+                  </span>
+                  <span class="faq_question_minus faq_question_icon">
+                    <img src="./img/minus.svg" alt="" />
+                  </span>
+                </button>
+              </div>
+              <div class="faq__question-text">
+                Начало использования сайта https://nbfitness.online (далее по
+                тексту - Сайт) означает Ваше полное согласие со всеми условиями
+                и правилами, указанными в настоящем ПОЛЬЗОВАТЕЛЬСКОМ СОГЛАШЕНИИ.
+                При несогласии с условиями настоящего соглашения Пользователь
+                обязуется воздержаться от приобретения услуг или прекратить
+                использование Сайта без возврата средств.
+                <div class="faq__question-copy">
+                  <span class="copy_icon">
+                    <img src="./img//copy.svg" alt="" />
+                  </span>
+                  <button class="copy_btn">Скопировать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__contact pt media_768">
+            <a href="#" class="faq__contact_text"> Напиши нам</a>
+
+            <a href="#">
+              <img src="./img/telegram.svg" alt="telegram" />
+            </a>
+            <a href="#">
+              <img src="./img/Instagram.svg" alt="instagram" />
+            </a>
+            <a href="#">
+              <img src="./img/Whatsapp.png" alt="whatsapp" />
+            </a>
+          </div>
+          <div class="faq__menu_responsive media_768">
+            <ul>
+              <li>
+                <a href="#">Общие</a>
+              </li>
+              <li>
+                <a href="#">О курсах</a>
+              </li>
+              <li>
+                <a href="#">Пользовательское согл.</a>
+              </li>
+              <li>
+                <a href="#">Другие вопросы</a>
+              </li>
+              <li>
+                <a href="#">Остальное</a>
+              </li>
+              <li>
+                <a href="#">Лучшее</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer footer-title">
+    <footer class="footer">
       <div class="container">
-        <div class="footer__inner df">
+        <div class="footer__inner">
           <div class="footer__contact">
             <div class="footer__outer df pb">
               <div class="footer__date">2020 NB fit</div>
@@ -130,15 +251,19 @@
                 <a href="#">Написать нам</a>
               </div>
             </div>
-            <div class="footer__socials">
-              <a href="#"><img src="" alt="social" /></a>
-              <a href="#"><img src="" alt="social" /></a>
-              <a href="#"><img src="" alt="social" /></a>
-              <a href="#"><img src="" alt="social" /></a>
-            </div>
+          </div>
+          <div class="footer__socials">
+            <a href="#"
+              ><img src="./img/instagram-footer.svg" alt="social"
+            /></a>
+            <a href="#"><img src="./img/youtube-footer.png" alt="social" /></a>
+            <a href="#"><img src="./img/facebok-footer.png" alt="social" /></a>
+            <a href="#"
+              ><img src="./img/printerest-footer.png" alt="social"
+            /></a>
           </div>
           <div class="footer__logo">
-            <a href="#"><img src="" alt="logo" /></a>
+            <a href="#"><img src="./img/Logo.svg" alt="logo" /></a>
           </div>
           <div class="footer__link">
             <nav>
@@ -152,4 +277,5 @@
       </div>
     </footer>
   </body>
+  <script src="./main.js"></script>
 </html>
