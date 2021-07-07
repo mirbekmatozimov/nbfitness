@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -193,7 +197,7 @@ body {
   font-size: 17px;
   line-height: 28px;
   letter-spacing: 0.34px;
-  padding: 40px 24px 0px 64px;
+  padding: 40px 24px 0px 24px;
   background: #14171b;
   border: 1px solid #202429;
   box-sizing: border-box;
@@ -206,6 +210,7 @@ body {
 .faq__question-title {
   padding-bottom: 40px;
   display: flex;
+  justify-content: space-between;
 }
 .question_btn {
   padding: 0;
