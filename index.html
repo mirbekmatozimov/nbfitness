@@ -14,7 +14,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__inner df">
+        <div class="header__inner">
           <div class="header__logo">
             <a href="#">
               <img src="./img/Logo.svg" alt="logo" />
@@ -51,10 +51,10 @@
         </div>
       </div>
     </header>
-    <section class="faq section-title">
+    <section class="faq">
       <div class="container">
         <div class="faq__head">
-          <h1 class="faq__title title">Часто задаваемые вопросы</h1>
+          <h1 class="faq__title">Часто задаваемые вопросы</h1>
           <div class="faq__subtitle">
             Как оплатить из европы и других стран? Не получается оплатить?
           </div>
@@ -129,16 +129,17 @@
             </div>
             <div class="faq__contact">
               <a href="#" class="faq__contact_text"> Напиши нам</a>
-
-              <a href="#">
-                <img src="./img/telegram.svg" alt="telegram" />
-              </a>
-              <a href="#">
-                <img src="./img/Instagram.svg" alt="instagram" />
-              </a>
-              <a href="#">
-                <img src="./img/Whatsapp.png" alt="whatsapp" />
-              </a>
+              <div class="socials">
+                <a href="#" class="social">
+                  <img src="./img/telegram.svg" alt="telegram" />
+                </a>
+                <a href="#" class="social">
+                  <img src="./img/Instagram.svg" alt="instagram" />
+                </a>
+                <a href="#" class="social">
+                  <img src="./img/Whatsapp.png" alt="whatsapp" />
+                </a>
+              </div>
             </div>
           </div>
           <div class="faq__navcur active" id="all">
@@ -205,15 +206,17 @@
           <div class="faq__contact media_768">
             <a href="#" class="faq__contact_text"> Напиши нам</a>
 
-            <a href="#">
-              <img src="./img/telegram.svg" alt="telegram" />
-            </a>
-            <a href="#">
-              <img src="./img/Instagram.svg" alt="instagram" />
-            </a>
-            <a href="#">
-              <img src="./img/Whatsapp.png" alt="whatsapp" />
-            </a>
+            <div class="media-socials">
+              <a href="#">
+                <img src="./img/telegram.svg" alt="telegram" />
+              </a>
+              <a href="#">
+                <img src="./img/Instagram.svg" alt="instagram" />
+              </a>
+              <a href="#">
+                <img src="./img/Whatsapp.png" alt="whatsapp" />
+              </a>
+            </div>
           </div>
           <div class="faq__menu_responsive media_768">
             <ul>
@@ -243,23 +246,25 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
-          <div class="footer__contact">
-            <div class="footer__outer">
-              <div class="footer__date">2020 NB fit</div>
-              <div class="footer__tg">
-                <a href="#">Написать нам</a>
+          <div class="footer__wrap">
+            <div class="footer__contact">
+              <div class="footer__outer">
+                <div class="footer__date">2020 NB fit</div>
+                <div class="footer__tg">
+                  <a href="#">Написать нам</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="footer__socials">
-            <a href="#"
-              ><img src="./img/instagram-footer.svg" alt="social"
-            /></a>
-            <a href="#"><img src="./img/youtube-footer.png" alt="social" /></a>
-            <a href="#"><img src="./img/facebok-footer.png" alt="social" /></a>
-            <a href="#"
-              ><img src="./img/printerest-footer.png" alt="social"
-            /></a>
+            <div class="footer__socials">
+              <a href="#"
+                ><img src="./img/instagram-footer.svg" alt="social"
+              /></a>
+              <a href="#"><img src="./img/youtube-footer.png" alt="social" /></a>
+              <a href="#"><img src="./img/facebok-footer.png" alt="social" /></a>
+              <a href="#"
+                ><img src="./img/printerest-footer.png" alt="social"
+              /></a>
+            </div>
           </div>
           <div class="footer__logo">
             <a href="#"><img src="./img/Logo.svg" alt="logo" /></a>
@@ -268,9 +273,19 @@
             <nav>
               <ul>
                 <li><a href="#">Пользовательское соглашение</a></li>
-                <li><a href="#">Для тренеров</a></li>
+                <li><a href="#" class="for-trainers">Для тренеров</a></li>
               </ul>
             </nav>
+          </div>
+          <div class="footer__socials media_768">
+            <a href="#"
+              ><img src="./img/instagram-footer.svg" alt="social"
+            /></a>
+            <a href="#"><img src="./img/youtube-footer.png" alt="social" /></a>
+            <a href="#"><img src="./img/facebok-footer.png" alt="social" /></a>
+            <a href="#"
+              ><img src="./img/printerest-footer.png" alt="social"
+            /></a>
           </div>
         </div>
       </div>
