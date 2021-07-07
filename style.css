@@ -31,7 +31,6 @@ body {
   font-weight: 400px;
   font-size: 16px;
   overflow-x: hidden;
-  background: red;
 }
 
 .container {
@@ -39,21 +38,6 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-
-/* demo styles  start*/
-
-.df {
-  display: flex;
-  justify-content: space-between;
-}
-
-.pt {
-  padding-top: 30px;
-}
-.pb {
-  padding-bottom: 30px;
-}
-/* demo styles  end*/
 
 .nav {
   font-weight: 600;
